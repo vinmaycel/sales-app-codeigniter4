@@ -29,3 +29,6 @@ $routes->get('/admin/test/(:segment)', [TestsController::class,  'show']);
 $routes->get('/admin/test/(:segment)/edit', [TestsController::class,  'edit']);
 $routes->put('/admin/test/(:segment)', [TestsController::class,  'update']);
 $routes->delete('/admin/test/(:segment)', [TestsController::class,  'delete']);
+
+
+$routes->resource('admin/product',['controller'=>'ProductController']);
